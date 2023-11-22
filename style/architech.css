@@ -1,3 +1,133 @@
-.box{
-    background-color: aqua;
+/* work sans font from google fronts */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+  *{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+  }
+  .btn-primary{
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background: orange;
+    padding: 20px 25px;
+    color: #fff;
+    cursor:pointer ;
+    border: 0;
+  
+  }
+  header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    /* background-size: cover; */
+    /* box-sizing: border-box; */
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-title{
+    font-size: 2.8rem;
+    font-weight: 700px;
+    color: black;
+  }
+  nav > ul{
+    display: flex;
+  }
+  nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    
+  }
+  nav li a{
+    text-decoration: none;
+    color: black;
+  }
+  .banner-content{
+    max-width: 800px ;
+    text-align: center;
+    margin:0 auto; 
+  }
+  .banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+  }
+/* .banner-description{
+    color: #727272; */
 }
+.banner img{
+  margin-top: 20px;
+  width: 100%;
+}
+/* .btn-primary{
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  background: orange;
+  padding: 20px 25px;
+  color: #fff;
+  cursor:pointer ;
+  border: 0;
+
+} */
+
+/* reaponaive media quaries
+mobile device */
+@media screen and (max-width: 576px) {
+ .header{
+    padding: 20px;
+  }
+ .nav{
+   flex-direction: column;
+  }
+}
+/* tablet or medium device */
+@media screen and (min-width:576px) and (max-width:960px){
+ .header{
+  padding: 50px;
+ }
+  .nav{
+    flex-direction: column;
+  }
+  
+}
+.main{
+  max-width: 1440px;
+  margin: 70px auto;
+}
+/* team style */
+.team-container{
+  display:flex;
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1rf );
+  gap: 105rem;
+}
+.team-content{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.team-title{
+  font-size: 2.8rem;
+}.team-title .quick-list{
+  color: #727272;
+  font-weight: 500px;
+}
+.team-title .text-future{
+  color: #ff990f ;
+  font-weight: 700px;
+}
+/* /* .bannet{
+  text-align: center; */
+ */
+/* .image{
+  height:600px ;
+width: 400px;
+left: inherit;
+} */
