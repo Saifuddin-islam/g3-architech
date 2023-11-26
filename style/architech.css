@@ -98,8 +98,8 @@ main{
 }
 .team-img-container{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 1.5rem;
+  grid-template-columns:repeat(2,1fr);
+  gap:1.5rem;
   column-gap:1rem;
 }
 .team-content{
@@ -117,25 +117,54 @@ main{
   color: #ff990f ;
   font-weight: 700px;
 }
+/* future section style */
+.future{
+  margin-top:130px ;
+  display: flex;
+  gap: 100px;
+}
+
+.future .section-title{
+  border-left: 5px solid #ff990f;
+  margin-left: 20px;
+}
+.future-content .card{
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-years-badge{
+border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+width: 342px;
+padding: 40px;
+}
+.ten-years-badge h2 {
+font-size: 4rem;
+}
 /* facts section */
-.facst-card-container{
+.facts-card-container{
   display: flex;
   justify-content: space-around;
 }
-.facst-card-container .card {
+.facts-card-container .card {
   border: 8px;
   border: 1px solid #ff990f;
   text-align: center;
-  padding: 30px 30px;
+  padding: 30px;
  
 }
-.facst-card-container .card-title{
+.facts-card-container .card-title{
 font-weight: 600;
 font-size: 1.25rem;
 margin-top: 5px;
 }
 
-.facst-card-container .card-stats{
+.facts-card-container .card-stats{
   font-size: 2.8rem;
   color: #424242;
   margin-top: 10px ;
@@ -150,6 +179,9 @@ margin-top: 5px;
   margin-top: 50px;
   display:flex;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+
 }
 
 .sponsores-img-container img{
@@ -163,18 +195,18 @@ mobile device */
      padding: 20px;
    }
   nav,
-  .team-container, .facst-card-container, .sponsores-img-container{
+  .team-container, .facts-card-container, .sponsores-img-container{
 
     flex-direction: column;
    }
    .team-img-container{
     grid-template-columns:1fr ;
    }
-   .team-content , .facst-card-container{
+   .team-content , .facts-card-container{
     padding-left: 20px;
     padding-right: 20px;
   }
-  .facst-card-container{
+  .facts-card-container{
     gap: 20px;
   }
  }
@@ -183,16 +215,9 @@ mobile device */
   header{
    padding: 50px;
   }
-   nav, .team-container{
+   nav, .team-container,
+   .sponsores-img-container{
      flex-direction: column;
    }
    
  }
-/* /* .bannet{
-  text-align: center; */
- */
-/* .image{
-  height:600px ;
-width: 400px;
-left: inherit;
-} */
